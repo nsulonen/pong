@@ -2,7 +2,7 @@ import pygame
 from pygame import SurfaceType
 from pygame.time import Clock
 from helpers.constants import *
-from objects.Player import Player
+from classes.Player import Player
 
 def main() -> None:
     pygame.init()

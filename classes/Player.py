@@ -14,6 +14,9 @@ class Player(Block):
         pygame.draw.rect(surface, "white", pygame.Rect(self.x, self.y, 20, 100))
         
     def move(self, delta_time: float) -> None:
+        if (SCREEN_HEIGHT > self.y < 0):
+            return
+        
         self.y += 1000 * delta_time
         
     def update(self, delta_time: float) -> None:
