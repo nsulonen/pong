@@ -1,6 +1,6 @@
 import pygame
 from helpers.constants import *
-from objects.Block import Block
+from classes.Block import Block
 
 
 class Player(Block):
