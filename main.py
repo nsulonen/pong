@@ -11,8 +11,8 @@ def main() -> None:
     delta_time: float = 0.0
     
     # Instantiate Player object
-    x = PLAYER_POS_X
-    y = PLAYER_POS_Y
+    x: int = PLAYER_POS_X
+    y: int = PLAYER_POS_Y
     player: Player = Player(x, y)
     
     # Grouping objects
@@ -28,6 +28,7 @@ def main() -> None:
         surface.fill(color=(0,0,0))
         
         player.draw(surface)
+        player.update(delta_time)
         
         pygame.draw.line(surface,
                          "white",
@@ -38,7 +39,7 @@ def main() -> None:
         
         pygame.display.flip()
         
-        refresh_rate.tick(60)
+        refresh_rate.tick(144)
         delta_time = refresh_rate.tick(60) / 1000
 
 
