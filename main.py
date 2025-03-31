@@ -32,7 +32,7 @@ def main() -> None:
         
         pygame.draw.line(surface,
                          "white",
-                         start_pos=(SCREEN_WIDTH / 2, SCREEN_HEIGHT * -1),
+                         start_pos=(SCREEN_WIDTH / 2, 0),
                          end_pos=(SCREEN_WIDTH / 2, SCREEN_HEIGHT),
                          width=1
                         )   
